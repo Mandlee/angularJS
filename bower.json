@@ -1,0 +1,23 @@
+{
+  "name": "client",
+  "version": "0.0.0",
+  "authors": [
+    "aramisz <aramisz@artscript.eu>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "angular": "~1.4.7",
+    "bootstrap": "~3.3.5",
+    "angular-ui-router": "~0.2.15",
+    "angular-local-storage": "~0.2.2"
+  }
+}
