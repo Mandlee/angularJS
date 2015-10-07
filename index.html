@@ -8,43 +8,46 @@
     <link href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet">
 
 </head>
-<body data-ng-controller="MainIndexController as mainCtrl">
+< data-ng-controller="MainIndexController as mainCtrl">
 
-<div ui-view></div>
+    <div ui-view></div>
 
-<!-- JQuery, Bootstrap, etc. -->
-<script src="bower_components/jquery/dist/jquery.min.js"></script>
-<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- JQuery, Bootstrap, etc. -->
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 
-<!-- Angular main libs -->
-<script src="bower_components/angular/angular.min.js"></script>
-<script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
-<script src="bower_components/angular-local-storage/dist/angular-local-storage.min.js"></script>
+    <!-- Angular main libs -->
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="bower_components/angular-local-storage/dist/angular-local-storage.min.js"></script>
 
-<!-- Angular project files -->
-<script src="app/config/run.config.js"></script>
-<script src="app/config/global.config.js"></script>
-<script src="app/config/app.config.js"></script>
-<script src="app/general.js"></script>
-<script src="app/app.js"></script>
-<script src="app/routes.js"></script>
+    <!-- Third party libraries -->
+    <script src="js/detect-browsers.js"></script>>
 
-<!-- Core Module -->
-<script src="app/module/core/CoreModule.js"></script>
-<script src="app/module/core/controller/CoreIndexController.js"></script>
-<script src="app/module/core/service/CoreErrorService.js"></script>
-<script src="app/module/core/filter/preJsonFilter.js"></script>
-<script src="app/module/core/filter/htmlFilter.js"></script>
+    <!-- Angular project files -->
+    <script src="app/config/run.config.js"></script>
+    <script src="app/config/global.config.js"></script>
+    <script src="app/config/app.config.js"></script>
+    <script src="app/general.js"></script>
+    <script src="app/app.js"></script>
+    <script src="app/routes.js"></script>
 
-<!-- Auth Module -->
-<script src="app/module/auth/AuthModule.js"></script>
-<script src="app/module/auth/controller/AuthIndexController.js"></script>
-<script src="app/module/auth/service/AuthErrorService.js"></script>
+    <!-- Core Module -->
+    <script src="app/module/core/CoreModule.js"></script>
+    <script src="app/module/core/controller/CoreIndexController.js"></script>
+    <script src="app/module/core/service/CoreErrorService.js"></script>
+    <script src="app/module/core/filter/preJsonFilter.js"></script>
+    <script src="app/module/core/filter/htmlFilter.js"></script>
 
-<!-- Main Module -->
-<script src="app/module/main/MainModule.js"></script>
-<script src="app/module/main/controller/MainIndexController.js"></script>
-<script src="app/module/main/service/MainErrorService.js"></script>
+    <!-- Auth Module -->
+    <script src="app/module/auth/AuthModule.js"></script>
+    <script src="app/module/auth/controller/AuthIndexController.js"></script>
+    <script src="app/module/auth/service/AuthErrorService.js"></script>
+
+    <!-- Main Module -->
+    <script src="app/module/main/MainModule.js"></script>
+    <script src="app/module/main/controller/MainIndexController.js"></script>
+    <script src="app/module/main/service/MainErrorService.js"></script>
 
 </body>
 </html>
