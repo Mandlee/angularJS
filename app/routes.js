@@ -9,18 +9,28 @@ vndrRoutes.config(function ($stateProvider, $urlRouterProvider) {
     $stateProvider
         .state('index', {
             url: '',
-            templateUrl: 'view/module/main/index/main-index.html'
+            templateUrl: 'view/module/main/main-index.html'
         })
         .state('index2', {
             url: '/',
-            templateUrl: 'view/module/main/index/main-index.html'
+            templateUrl: 'view/module/main/main-index.html'
         })
-        //.state('error', {
-        //    url: '/error',
-        //    templateUrl: 'view/other/error.html'
-        //})
+        .state('main', {
+            url: '/main',
+            abstract: true,
+            templateUrl: 'view/module/main/main-index.html'
+        })
+        .state('main.home', {
+            url: '/home',
+            templateUrl: 'view/module/main/home/home-index.html'
+        })
+        .state('main.about', {
+            url: '/about',
+            templateUrl: 'view/module/main/about/about-index.html'
+        })
         .state('auth', {
             url: '/auth',
+            abstract: true,
             templateUrl: 'view/module/auth/index/auth-index.html'
         })
         .state('auth.login', {
@@ -32,7 +42,7 @@ vndrRoutes.config(function ($stateProvider, $urlRouterProvider) {
             templateUrl: 'view/module/auth/index/auth-logout.html'
         })
         .state('auth.forgot', {
-            url: '/login',
+            url: '/forgot',
             templateUrl: 'view/module/auth/index/auth-forgot.html'
         });
 

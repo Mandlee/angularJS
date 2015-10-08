@@ -1,1 +1,19 @@
-Login screen
+<div class="col-md-3 col-md-offset-4">
+
+    <form class="form-signin" name="authForm">
+        <h2 class="form-signin-heading">Please sign in</h2>
+        <label for="inputEmail" class="sr-only">Email address</label>
+        <input type="email" id="inputEmail" class="form-control" placeholder="Email address" ng-model="user.email" ng-init="user.email='dev@ex.hu'" required autofocus>
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input type="password" id="inputPassword" class="form-control" placeholder="Password" ng-model="user.password" ng-init="user.password='dev@ex.hu'" required>
+        <button class="btn btn-lg btn-primary btn-block" type="submit" ng-disabled="!authForm.$valid" ng-click="authCtrl.login(user)">Sign in</button>
+    </form>
+
+    <p>
+
+    <!--<div ng-app="directive.g+signin">-->
+        <!--<google-plus-signin clientid="384216079248-rinfffttl0p3uo9af6spsihsr9kmnnie.apps.googleusercontent.com"></google-plus-signin>-->
+    <!--</div>-->
+    </p>
+
+</div>
