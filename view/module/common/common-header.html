@@ -11,8 +11,8 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav" ng-show="mainCtrl.isAuth">
-                <li class="active"><a ui-sref="main.home">Home</a></li>
-                <li><a ui-sref="main.about">About</a></li>
+                <li ng-class="{'active': mainCtrl.isActiveTab('main.home')}"><a ui-sref="main.home">Home</a></li>
+                <li ng-class="{'active': mainCtrl.isActiveTab('main.about')}"><a ui-sref="main.about">About</a></li>
 
             </ul>
             <ul class="nav navbar-nav navbar-right">

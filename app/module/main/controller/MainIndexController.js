@@ -13,6 +13,9 @@
 
         vm.user = {};
         vm.isAuth = false;
+        vm.isActiveTab = function(tabName){
+            return tabName === $state.current.name;
+        };
 
         console.log('Init Main Module');
 
